@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zAS-sq-PkJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="xhp-WP-zjf">
+            <objects>
+                <viewController id="zAS-sq-PkJ" customClass="ViewController" customModule="AnotherLayoutExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aIZ-ht-gYe"/>
+                        <viewControllerLayoutGuide type="bottom" id="p7Z-Qb-Dx6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gmq-TY-cag">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCF-k7-dvH">
+                                <rect key="frame" x="16" y="205" width="343" height="257"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bkg" translatesAutoresizingMaskIntoConstraints="NO" id="t39-9Z-rf9">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="257"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Man" translatesAutoresizingMaskIntoConstraints="NO" id="rLA-Qe-3og">
+                                        <rect key="frame" x="35.5" y="41.5" width="149" height="149"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rLA-Qe-3og" secondAttribute="height" multiplier="1:1" id="6w4-TM-y84"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Woman" translatesAutoresizingMaskIntoConstraints="NO" id="d9v-vG-O2b">
+                                        <rect key="frame" x="166" y="80" width="149" height="149"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dark-pink-heart" translatesAutoresizingMaskIntoConstraints="NO" id="jDo-2K-14s">
+                                        <rect key="frame" x="148" y="115" width="47" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="jDo-2K-14s" secondAttribute="height" multiplier="1.2:1" id="Sn9-sy-gcJ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="d9v-vG-O2b" firstAttribute="height" secondItem="rLA-Qe-3og" secondAttribute="height" id="4Kr-HO-efo"/>
+                                    <constraint firstItem="t39-9Z-rf9" firstAttribute="top" secondItem="qCF-k7-dvH" secondAttribute="top" id="4Xw-aA-F4o"/>
+                                    <constraint firstAttribute="trailing" secondItem="t39-9Z-rf9" secondAttribute="trailing" id="5n4-yp-cPJ"/>
+                                    <constraint firstItem="rLA-Qe-3og" firstAttribute="centerX" secondItem="qCF-k7-dvH" secondAttribute="centerX" multiplier="0.64" id="5nH-Uf-ngt"/>
+                                    <constraint firstItem="rLA-Qe-3og" firstAttribute="height" secondItem="qCF-k7-dvH" secondAttribute="height" multiplier="0.58" id="7Dn-41-o6c"/>
+                                    <constraint firstItem="d9v-vG-O2b" firstAttribute="centerX" secondItem="qCF-k7-dvH" secondAttribute="centerX" multiplier="1.4" id="7NM-mV-hqz"/>
+                                    <constraint firstAttribute="width" secondItem="qCF-k7-dvH" secondAttribute="height" multiplier="6:4.5" id="9HU-vA-QNe"/>
+                                    <constraint firstItem="d9v-vG-O2b" firstAttribute="centerY" secondItem="qCF-k7-dvH" secondAttribute="centerY" multiplier="1.2" id="9VI-d8-r6O"/>
+                                    <constraint firstItem="rLA-Qe-3og" firstAttribute="centerY" secondItem="qCF-k7-dvH" secondAttribute="centerY" multiplier="0.9" id="J9F-It-k2m"/>
+                                    <constraint firstItem="t39-9Z-rf9" firstAttribute="leading" secondItem="qCF-k7-dvH" secondAttribute="leading" id="JiR-y6-iRL"/>
+                                    <constraint firstAttribute="bottom" secondItem="t39-9Z-rf9" secondAttribute="bottom" id="KiB-ms-1sh"/>
+                                    <constraint firstItem="d9v-vG-O2b" firstAttribute="width" secondItem="rLA-Qe-3og" secondAttribute="width" id="Xdh-Lj-LSj"/>
+                                    <constraint firstItem="jDo-2K-14s" firstAttribute="centerX" secondItem="qCF-k7-dvH" secondAttribute="centerX" id="ZSz-cg-G2z"/>
+                                    <constraint firstItem="jDo-2K-14s" firstAttribute="height" secondItem="qCF-k7-dvH" secondAttribute="height" multiplier="0.15" id="gDR-wO-V5e"/>
+                                    <constraint firstItem="jDo-2K-14s" firstAttribute="centerY" secondItem="qCF-k7-dvH" secondAttribute="centerY" multiplier="1.05" id="ye7-Qg-4K4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qCF-k7-dvH" firstAttribute="leading" secondItem="gmq-TY-cag" secondAttribute="leadingMargin" id="09y-PH-9xQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qCF-k7-dvH" secondAttribute="trailing" id="OPe-qE-ZFB"/>
+                            <constraint firstItem="qCF-k7-dvH" firstAttribute="centerY" secondItem="gmq-TY-cag" secondAttribute="centerY" id="dYV-fQ-7J6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xv3-v7-5jB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="1533.4239130434785"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Man" width="710" height="710"/>
+        <image name="Woman" width="710" height="710"/>
+        <image name="bkg" width="374" height="280"/>
+        <image name="dark-pink-heart" width="350" height="315"/>
+    </resources>
+</document>
